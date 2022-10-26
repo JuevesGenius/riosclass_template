@@ -188,20 +188,20 @@ SYNOPSYS_HOME=/opt/cad/synopsys/installs
 MPI_INCLUDE=/usr/include/mpich-3.2-x86_64
 MANPATH=/usr/share/man/mpich-3.2:/usr/share/man:/usr/local/share/man
 QRC_HOME=/opt/cad/cadence/installs/QUANTUS201
-XDG_SESSION_ID=16740
+XDG_SESSION_ID=17223
 RGCC=/work/stu/dwfeng/RISCV/riscv-toolchains/bin/riscv64-unknown-elf-gcc
 HOSTNAME=server1
 TERM=xterm-256color
 SHELL=/bin/bash
 OA_LINK_DIR=/work/tools/cadence/installs/ICADVM201/oa_v22.60.043
 HISTSIZE=1000
-SSH_CLIENT=10.8.101.247 60237 22
+SSH_CLIENT=10.8.101.247 58678 22
 BAG_TECH_CONFIG_DIR=/work/stu/yzhang/process/bag/BAG2_cds_ff_mpt/cds_ff_mpt
 SPECTRE_HOME=/opt/cad/cadence/installs/SPECTRE201
 QTDIR=/usr/lib64/qt-3.3
 QTINC=/usr/lib64/qt-3.3/include
 BAG_WORK_DIR=/work/stu/yzhang/process/bag/BAG2_cds_ff_mpt
-SSH_TTY=/dev/pts/140
+SSH_TTY=/dev/pts/13
 BAG_TEMP_DIR=/work/stu/yzhang/process/bag/BAG2_cds_ff_mpt/BAGTMP
 QT_GRAPHICSSYSTEM_CHECKED=1
 MPI_PYTHON_SITEARCH=/usr/lib64/python2.7/site-packages/mpich-3.2
@@ -247,7 +247,7 @@ PYTHONPATH=/usr/lib64/python2.7/site-packages/mpich-3.2
 LOGNAME=xuhao
 QTLIB=/usr/lib64/qt-3.3/lib
 XDG_DATA_DIRS=/work/stu/xuhao/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-SSH_CONNECTION=10.8.101.247 60237 10.8.6.4 22
+SSH_CONNECTION=10.8.101.247 58678 10.8.6.4 22
 CDS_LIC_FILE=5280@166.111.77.2
 CAD_HOME=/opt/cad
 MPI_HOME=/usr/lib64/mpich-3.2
@@ -267,7 +267,7 @@ CDS_INST_DIR=/opt/cad/cadence/installs/ICADVM201
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
 }
 _=./simv
-OLDPWD=/work/stu/xuhao/workspace/CPULAB/riosclass_template/verilog/NewTop/isatest
+OLDPWD=/work/stu/xuhao/workspace/CPULAB/riosclass_template/verilog
 VCS_HEAP_EXEC=true
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_STACK_EXEC=true
@@ -279,8 +279,8 @@ FLEXLM_BORROWFILE=/work/stu/xuhao/.server1-borrow.txt
 Runtime command line arguments:
 argv[0]=./simv
 279 profile - 100
-          CPU/Mem usage: 0.100 sys,  0.600 user,  281.19M mem
-280 Elapsed time:    0:00:02    Tue Oct 25 21:57:26 2022
+          CPU/Mem usage: 0.080 sys,  0.410 user,  281.19M mem
+280 Elapsed time:    0:00:04    Wed Oct 26 22:05:38 2022
 281 pliAppInit
 282 FSDB_GATE is set.
 283 FSDB_RTL is set.
@@ -296,54 +296,55 @@ argv[0]=./simv
 293 FSDB_VCS_ENABLE_NATIVE_VC is enable
 294 sps_call_fsdbDumpvars_vd_main at 0 : ./tb_hehe.v(14)
 295 argv[0]: (+all)
-296 *Verdi* : Create FSDB file 'novas.fsdb'
-297 compile option from '/work/stu/xuhao/workspace/CPULAB/riosclass_template/verilog/NewTop/simv.daidir/vcs_rebuild'.
-298   "vcs '-full64' '+v2k' '-kdb' '-debug_access+all' '+define+DUMPON+CPLUG' '-sverilog' '+vcs+lic+wait' '+vc+list' '+vpi' '-timescale=1ns/1ps' '-v2k_generate' '+incdir+../rtl/lab_1/src' '../rtl/lab_1/src/bus_arbiter.v' '../rtl/lab_1/src/hehe.v' '../rtl/lab_1/src/cache/l1dcache.v' '../rtl/lab_1/src/cache/l1icache_32.v' '../rtl/lab_1/src/cache/cacheblock/sky130_sram_1kbyte_1rw1r_32x256_8.v' '../rtl/lab_1/src/cache/cacheblock/sky130_sram_1rw1r_64x256_8.v' '../rtl/lab_1/src/cache/cacheblock/std_dffe.v' '../rtl/lab_1/src/cache/cacheblock/std_dffr.v' '../rtl/lab_1/src/core_empty/core_empty.v' '../rtl/lab_1/src/core_empty/lsu/ac.v' '../rtl/lab_1/src/core_empty/lsu/agu.v' '../rtl/lab_1/src/core_empty/lsu/cu.v' '../rtl/lab_1/src/core_empty/lsu/lr.v' '../rtl/lab_1/src/core_empty/lsu/lsq.v' '../rtl/lab_1/src/core_empty/lsu/nblsu.v' '../rtl/lab_1/src/core_empty/pipeline/backend.v' '../rtl/lab_1/src/core_empty/pipeline/frontend.v' '../rtl/lab_1/src/core_empty/units/btb.v' '../rtl/lab_1/src/core_empty/units/counter_rob.v' '../rtl/lab_1/src/core_empty/units/counter_tmp.v' '../rtl/lab_1/src/core_empty/units/counter.v' '../rtl/lab_1/src/core_empty/units/csr.v' '../rtl/lab_1/src/core_empty/units/decode.v' '../rtl/lab_1/src/core_empty/units/excep_ctrl.v' '../rtl/lab_1/src/core_empty/units/fake_icache.v' '../rtl/lab_1/src/core_empty/units/fetch.v' '../rtl/lab_1/src/core_empty/units/fifo_tmp.v' '../rtl/lab_1/src/core_empty/units/fifo.v' '../rtl/lab_1/src/core_empty/units/gshare.v' '../rtl/lab_1/src/core_empty/units/ins_buffer.v' '../rtl/lab_1/src/core_empty/units/new_alu.v' '../rtl/lab_1/src/core_empty/units/new_fu.v' '../rtl/lab_1/src/core_empty/units/physical_regfile.v' '../rtl/lab_1/src/core_empty/units/rcu.v' './tb_hehe.v' './dpram64.sv' './wb_arb.sv' './wb_interconnect.sv' 'plug.cpp' '-top' 'tb_hehe' 2>&1"
-299 [spi_vcs_vd_ppi_create_root]: no upf option
-300 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
-301 Power dumping is enabled and VIR_REDUCTION may not work.
-302 *Verdi* : Begin traversing the scopes, layer (0).
-303 *Verdi* : Enable +all dumping.
-304 *Verdi* : End of traversing.
-305 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.120 sys,  0.640 user,  398.55M mem
-                   incr: 0.010 sys,  0.040 user,  25.61M mem
-                   accu: 0.010 sys,  0.040 user,  25.61M mem
-              accu incr: 0.010 sys,  0.040 user,  25.61M mem
+296 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+297 *Verdi* : Create FSDB file 'novas.fsdb'
+298 compile option from '/work/stu/xuhao/workspace/CPULAB/riosclass_template/verilog/NewTop/simv.daidir/vcs_rebuild'.
+299   "vcs '-full64' '+v2k' '-kdb' '-debug_access+all' '+define+DUMPON+CPLUG' '-sverilog' '+vcs+lic+wait' '+vc+list' '+vpi' '-timescale=1ns/1ps' '-v2k_generate' '+incdir+../rtl/lab_1/src' '../rtl/lab_1/src/bus_arbiter.v' '../rtl/lab_1/src/hehe.v' '../rtl/lab_1/src/cache/l1dcache.v' '../rtl/lab_1/src/cache/l1icache_32.v' '../rtl/lab_1/src/cache/cacheblock/sky130_sram_1kbyte_1rw1r_32x256_8.v' '../rtl/lab_1/src/cache/cacheblock/sky130_sram_1rw1r_64x256_8.v' '../rtl/lab_1/src/cache/cacheblock/std_dffe.v' '../rtl/lab_1/src/cache/cacheblock/std_dffr.v' '../rtl/lab_1/src/core_empty/core_empty.v' '../rtl/lab_1/src/core_empty/lsu/ac.v' '../rtl/lab_1/src/core_empty/lsu/agu.v' '../rtl/lab_1/src/core_empty/lsu/cu.v' '../rtl/lab_1/src/core_empty/lsu/lr.v' '../rtl/lab_1/src/core_empty/lsu/lsq.v' '../rtl/lab_1/src/core_empty/lsu/nblsu.v' '../rtl/lab_1/src/core_empty/pipeline/backend.v' '../rtl/lab_1/src/core_empty/pipeline/frontend.v' '../rtl/lab_1/src/core_empty/units/btb.v' '../rtl/lab_1/src/core_empty/units/counter_rob.v' '../rtl/lab_1/src/core_empty/units/counter_tmp.v' '../rtl/lab_1/src/core_empty/units/counter.v' '../rtl/lab_1/src/core_empty/units/csr.v' '../rtl/lab_1/src/core_empty/units/decode.v' '../rtl/lab_1/src/core_empty/units/excep_ctrl.v' '../rtl/lab_1/src/core_empty/units/fake_icache.v' '../rtl/lab_1/src/core_empty/units/fetch.v' '../rtl/lab_1/src/core_empty/units/fifo_tmp.v' '../rtl/lab_1/src/core_empty/units/fifo.v' '../rtl/lab_1/src/core_empty/units/gshare.v' '../rtl/lab_1/src/core_empty/units/ins_buffer.v' '../rtl/lab_1/src/core_empty/units/new_alu.v' '../rtl/lab_1/src/core_empty/units/new_fu.v' '../rtl/lab_1/src/core_empty/units/physical_regfile.v' '../rtl/lab_1/src/core_empty/units/rcu.v' './tb_hehe.v' './dpram64.sv' './wb_arb.sv' './wb_interconnect.sv' 'plug.cpp' '-top' 'tb_hehe' 2>&1"
+300 [spi_vcs_vd_ppi_create_root]: no upf option
+301 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+302 Power dumping is enabled and VIR_REDUCTION may not work.
+303 *Verdi* : Begin traversing the scopes, layer (0).
+304 *Verdi* : Enable +all dumping.
+305 *Verdi* : End of traversing.
+306 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.100 sys,  0.430 user,  398.55M mem
+                   incr: 0.010 sys,  0.020 user,  25.62M mem
+                   accu: 0.010 sys,  0.020 user,  25.62M mem
+              accu incr: 0.010 sys,  0.020 user,  25.62M mem
 
           Count usage: 11767 var,  10860 idcode,  469 callback
                  incr: 11767 var,  10860 idcode,  469 callback
                  accu: 11767 var,  10860 idcode,  469 callback
             accu incr: 11767 var,  10860 idcode,  469 callback
-306 Elapsed time:    0:00:03    Tue Oct 25 21:57:27 2022
-307 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.120 sys,  0.640 user,  399.88M mem
+307 Elapsed time:    0:00:06    Wed Oct 26 22:05:40 2022
+308 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.100 sys,  0.430 user,  399.88M mem
                    incr: 0.000 sys,  0.000 user,  1.33M mem
-                   accu: 0.010 sys,  0.040 user,  26.94M mem
+                   accu: 0.010 sys,  0.020 user,  26.95M mem
               accu incr: 0.000 sys,  0.000 user,  1.33M mem
 
           Count usage: 11767 var,  10860 idcode,  469 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 11767 var,  10860 idcode,  469 callback
             accu incr: 0 var,  0 idcode,  0 callback
-308 Elapsed time:    0:00:03    Tue Oct 25 21:57:27 2022
-309 sps_call_fsdbDumpon_vd_main at 0 : ./tb_hehe.v(15)
-310 *Verdi* : fsdbDumpon - All FSDB files at 0 ps.
-311 End of simulation at 18055000
-312 Elapsed time:    0:00:03    Tue Oct 25 21:57:27 2022
-313 Begin FSDB profile info:
-314 FSDB Writer : bc1(27998) bcn(87764) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.063345) io wait(0.000000) theadpool wait(0.000000)
+309 Elapsed time:    0:00:06    Wed Oct 26 22:05:40 2022
+310 sps_call_fsdbDumpon_vd_main at 0 : ./tb_hehe.v(15)
+311 *Verdi* : fsdbDumpon - All FSDB files at 0 ps.
+312 End of simulation at 18055000
+313 Elapsed time:    0:00:06    Wed Oct 26 22:05:40 2022
+314 Begin FSDB profile info:
+315 FSDB Writer : bc1(27998) bcn(87764) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.126365) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-315 End FSDB profile info
-316 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-317                      - BlockUsed:1 Acquire:95375 BufferUsed:1650710
-318                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:0
-319                      - MainProducerTime:0.928405690 TotalConsumerTime:0.000000000
-320                      - ElapsedTime:0.527460000
-321 Producer   0 profile - BlockUsed:1 Acquire:95375 BufferUsed:1650710
-322 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
-323                      - BlockUsed:1 Acquire:95375 BufferUsed:1650710
-324 SimExit
-325 Elapsed time:    0:00:03    Tue Oct 25 21:57:27 2022
-326 Sim process exit
+316 End FSDB profile info
+317 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+318                      - BlockUsed:1 Acquire:95375 BufferUsed:1650710
+319                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:0
+320                      - MainProducerTime:0.654965610 TotalConsumerTime:0.000000000
+321                      - ElapsedTime:2.980802000
+322 Producer   0 profile - BlockUsed:1 Acquire:95375 BufferUsed:1650710
+323 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
+324                      - BlockUsed:1 Acquire:95375 BufferUsed:1650710
+325 SimExit
+326 Elapsed time:    0:00:08    Wed Oct 26 22:05:42 2022
+327 Sim process exit

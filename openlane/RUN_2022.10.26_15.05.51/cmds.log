@@ -1,0 +1,36 @@
+Wed Oct 26 15:05:52 UTC 2022 - Executing "openroad -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/layers.list /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Wed Oct 26 15:05:53 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/merged.nom.lef -i /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Wed Oct 26 15:05:53 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/merged.min.lef -i /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Wed Oct 26 15:05:53 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/merged.max.lef -i /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Wed Oct 26 15:05:54 UTC 2022 - Executing "python3 /openlane/scripts/mergeLib.py --output /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/merged.lib --name sky130A_merged /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib"
+
+Wed Oct 26 15:05:54 UTC 2022 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/trimmed.lib /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/merged.lib"
+
+Wed Oct 26 15:05:55 UTC 2022 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/cts/cts.lib.exclude.list --output /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/cts/cts.lib /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib"
+
+Wed Oct 26 15:05:55 UTC 2022 - Executing "python3 /openlane/scripts/new_tracks.py -i /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/routing/config.tracks"
+
+Wed Oct 26 15:05:56 UTC 2022 - Executing "echo {OpenLane e3a5189a1b0fc4290686fcf2ae46cd6d7947cf9f} > /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/OPENLANE_VERSION"
+
+Wed Oct 26 15:05:56 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib > /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/1-sky130_fd_sc_hd__tt_100C_1v80.no_pg.lib"
+
+Wed Oct 26 15:05:56 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/trimmed.lib > /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Wed Oct 26 15:05:56 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Wed Oct 26 15:13:46 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.10.26_15.05.51\/results\/synthesis\/hehe.v/} /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/config.tcl"
+
+Wed Oct 26 15:13:46 UTC 2022 - Executing "sed -i /defparam/d /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/results/synthesis/hehe.v"
+
+Wed Oct 26 15:13:47 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/logs/synthesis/2-sta.log"
+
+Wed Oct 26 15:14:07 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /work/stu/xuhao/tools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib > /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/2-sky130_fd_sc_hd__tt_100C_1v80.no_pg.lib"
+
+Wed Oct 26 15:14:07 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/trimmed.lib > /openlane/designs/hehe/runs/RUN_2022.10.26_15.05.51/tmp/synthesis/2-trimmed.no_pg.lib"
+
+Wed Oct 26 15:14:08 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /dev/null |& tee /dev/null"
+
