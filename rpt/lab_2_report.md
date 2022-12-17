@@ -1,4 +1,22 @@
 # 1. C model for original GreenRio frontend
+### The file structure of the CModel is as follows:
+
+![程序架构](https://user-images.githubusercontent.com/115879790/208249137-298be70f-bf45-423a-9eae-6cf47a6ad6f3.png)
+
+
+### The project has not been finished yet and will be completed before presentation. At present, the model can only load hex files into memory.
+
+### The content of the hex file and the memory:
+
+File:
+<img width="409" alt="截屏2022-12-17 23 30 25" src="https://user-images.githubusercontent.com/115879790/208249315-9619db63-c377-4370-a2f8-e1fc27491b03.png">
+
+Memory:
+<img width="459" alt="截屏2022-12-17 23 29 56" src="https://user-images.githubusercontent.com/115879790/208249300-aab76c70-b6fd-47a8-a848-d91a9c6c2564.png">
+
+
+
+PS: the project was established by Xcode on my own computer and the git repository was generated automatically. When being uploaded to the github, a 'nested git repo error' occurred and the codes were not uploaded correctly, which will be fixed later.
 
 
 
